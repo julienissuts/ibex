@@ -16,12 +16,11 @@ filesets:
       - lowrisc:prim:clock_inv
       - lowrisc:prim:clock_gating
 
-
   files_verilator_waiver:
     depend:
       # common waivers
       - lowrisc:lint:common
-    files:
+    files: []
     file_type: vlt
 
   files_ascentlint_waiver:
@@ -36,6 +35,7 @@ filesets:
     depend:
       # common waivers
       - lowrisc:lint:common
+    files: []
 
 generate:
   impl:

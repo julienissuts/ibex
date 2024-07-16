@@ -12,12 +12,11 @@ filesets:
       - lowrisc:prim:rom_pkg
       - lowrisc:prim:primgen
 
-
   files_verilator_waiver:
     depend:
       # common waivers
       - lowrisc:lint:common
-    files:
+    files: []
     file_type: vlt
 
   files_ascentlint_waiver:
@@ -32,6 +31,7 @@ filesets:
     depend:
       # common waivers
       - lowrisc:lint:common
+    files: []
 
 generate:
   impl:

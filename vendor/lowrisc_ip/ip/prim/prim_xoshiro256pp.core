@@ -25,13 +25,14 @@ filesets:
     depend:
       # common waivers
       - lowrisc:lint:common
-    files:
+    files: []
     file_type: waiver
 
   files_veriblelint_waiver:
     depend:
       # common waivers
       - lowrisc:lint:common
+    files: []
 
 targets:
   default: &default_target
