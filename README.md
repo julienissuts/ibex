@@ -111,3 +111,29 @@ License, Version 2.0 (see LICENSE for full text).
 
 Many people have contributed to Ibex through the years. Please have a look at
 the [credits file](CREDITS.md) and the commit history for more information.
+
+## Additional notes
+### Handling submodule
+
+```
+# Navigate to submodule
+cd path/to/submodule
+
+# Make changes in the submodule
+git add .
+git commit -m "Your commit message for submodule changes"
+git push origin master
+
+# Navigate back to the outer repository
+cd ../../
+
+# Update the submodule reference in the outer repository
+git add path/to/submodule
+git commit -m "Updated submodule to latest commit"
+git push origin master
+```
+### Problem Pull-Request riscv-arch-tests
+Don't perform the pull request in riscv-arch-tests!!
+It would do a pull-request to the repository from which I forked riscv-arch-tests.
+
+
